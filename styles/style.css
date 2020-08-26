@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+}
+
+header {
+    height: 120px;
+    background-image: url('../img/header_fon.png');
+}
+
+.site_logo {
+    display: inline-block;
+    height: 90px;
+    width: 38px;
+    margin: 15px 0 15px 40px;
+}
+
+.site_logo img {
+    width: 38px;
+    height: 90px;
+}
+
+footer {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    height: 120px;
+    background-color: rgb(92, 94, 115);
+    flex: 0 0 auto;
+}
+
+.copyrights {
+    float: right;
+    margin: 15px 40px 0 0;
+}
+
+.menu {
+    float: right;
+    margin: 47px 40px 47px 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    font-family: 'Courier New';
+    font-size: 23px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #34668c;
+}
+
+.menu li a:hover {
+    color: rgb(214, 194, 83);
+}
+
+.menu li a:active {
+    color: #ea4646;
+}
+
+.calalog_wrapper {
+    display: flex;
+}
+
+.catalog_content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.title_1 {
+    font-family: 'Courier New';
+    color: black;
+    background-color: #eaeaea;
+}
+
+.title_3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    clear: both;
+}
+
+.guitar_img {
+    float: left;
+    margin-bottom: 18px;
+    margin-right: 20px;
+}
+
+.short_desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 17px;
+    overflow: hidden;
+}
+
+.product_price {
+    display: block;
+    font-family: 'Gill Sans';
+    color: #707070;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.button_buy {
+    width: 180px;
+    height: 40px;
+    font-family: 'Courier New';
+    font-size: 16px;
+    color: #707070;
+    border: 2px solid #707070;
+    border-radius: 5px;
+}
+
+.button_buy:active {
+    background-color: #dadada;
+}
+
+.button_buy:hover {
+    border-color: #34668c;
+    color: #34668c;
+    text-decoration: underline;
+}
+
+.detailed_desc, .welcome {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/*
+.specifications {
+    color: rgb(84, 84, 85);
+    font-size: 15px;
+    line-height: 20px;
+    list-style-image: url(../img/Check-In.png);
+}
+*/
+
+.table_spec {
+    border: 1px solid #000;
+    color: rgb(84, 84, 85);
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    width: 850px;
+    height: 80px;
+    border-collapse: collapse;
+}
+
+.table_spec td {
+    border: 1px solid rgb(84, 84, 85);
+}
+
+.table_left_right {
+    background-color: rgb(190, 190, 190);
+    width: 20px;
+}
+
+.table_up_down {
+    background-color: rgb(190, 190, 190);
+    height: 10px;
+}
+
+.available {
+    color: #484343;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts_name {
+    width: 185px;
+    height: 16px;
+}
+
+.contacts_mail {
+    width: 180px;
+    height: 16px;
+}
+
+.contacts_mail:focus {
+    background-color: rgb(255, 238, 139);
+    color: #c241ce;
+}
+
+.contacts_theme {
+    width: 248px;
+    height: 16px;
+}
+
+form textarea, form input[type="email"], form input[type="text"], input[type="submit"], input[type="reset"] {
+    font-family: 'Courier New';
+    color: rgb(84, 84, 85);
+    font-size: 14px;
+}
+
+form textarea, form input[type="text"], form input[type="email"] {
+    text-transform: capitalize;
+}
+
+form textarea {
+    resize: none;
+}
+
+.catalog_content_img {
+    height: 113.267px;
+}
+
+.catalog_content_link a {
+    color: #34668c;
+    text-decoration: none;
+    width: 290px;
+    display: inline-block;
+}
+
+.catalog_content_link a:active {
+    color: #ea4646;
+}
+
+.link_catalog {
+    height: 113.267px;
+    display: inline-block;
+}
+
+.location {
+    color: rgb(84, 84, 85);
+    font-size: 15px;
+    line-height: 20px;
+    list-style-image: url(../img/Check-In.png);
+}
+
+.location li a {
+    color: #34668c;
+}
+
+.location li a:active {
+    color: #ea4646;
+}
+
+.guitar_imgBig {
+    outline: 2px solid rgb(49, 78, 45);
+}
+
+.guitar_imgBig:hover {
+    outline: none;
+}
+
+.guitar_imgSmall {
+    border: 1px solid rgb(49, 78, 45);
+}
+
+.guitar_imgSmall:hover {
+    border: 1px solid transparent;
+}
+
+.short_desc:first-letter, .detailed_desc:first-letter, .available:first-letter {
+    font-family: 'Gill Sans';
+    font-size: 25px;
+}
+
+.line {
+    margin-bottom: 0;
+    margin-top: -8px;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.yan_map {
+    margin-bottom: 30px;
+}
