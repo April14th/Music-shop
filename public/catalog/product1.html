@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <header>
             <a href="../index.html" class="site_logo">
                 <img src="../img/site_logo.png" alt="Логотип_сайта">
@@ -17,6 +17,7 @@
                 <li><a href="../index.html">Главная</a></li>
                 <li><a href="../catalog.html">Каталог</a></li>
                 <li><a href="../contacts.html">Контакты</a></li>
+                <li><cart ref="cart"></cart></li>
             </ul>
         </header>
         <div class="content">
@@ -33,7 +34,7 @@
             <span class="product_price">30000 RUB</span>
             <input type="button" value="Купить товар" class="button_buy">
             <h3 class="title_3">Характеристики товара</h3>
-            <table class="table_spec">
+            <table> class="table_spec">
                 <tr>
                     <td colspan="9" class="table_up_down"></td>
                 </tr>
@@ -61,22 +62,6 @@
                     <td colspan="9" class="table_up_down"></td>
                 </tr>
             </table>
-        
-        <!--
-            <ul class="specifications">
-                <li>Материал корпуса: Ясень</li>
-                <li>Конфигурация звукоснимателей: НН </li>
-                <li>Тремоло/Бридж: Фиксированный</li>
-                <li>Тип: Цельнокорпусная</li>
-                <li>Мензура (в&nbsp;дюймах): 24.75</li>
-                <li>Материал топа: Ясень</li>
-                <li>Материал накладки грифа: Черное дерево</li>
-                <li>Количество струн: 6</li>
-                <li>Крепление грифа: Сквозной</li>
-                <li>Тип электроники: Пассивная</li>
-            </ul>
-        -->
-        
             <h3 class="title_3">Подробное описание товара</h3>
             <p class="detailed_desc">Шестиструнная электрогитара JACKSON PRO SC&nbsp;- ALIEN BURST является ярким представителем линейки Pro Series Monarkh SC&nbsp;Ash.<br> 
             Эта гитара обеспечит рок-музыканта мощным, насыщенным звучанием и&nbsp;неповторимым стилем на&nbsp;сцене. Инструменты этой серии имеют<br>
@@ -92,5 +77,8 @@
             <p class="copyrights">Все права защищены &copy;&nbsp;2020</p> 
         </footer>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="module" src="../js/main.js"></script>
+<script src="../js/CartComponent.js"></script>
 </body>
 </html>

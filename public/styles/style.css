@@ -20,10 +20,12 @@ body {
 header {
     height: 120px;
     background-image: url('../img/header_fon.png');
+    display: flex;
+    justify-content: space-between;
 }
 
 .site_logo {
-    display: inline-block;
+    display: flex;
     height: 90px;
     width: 38px;
     margin: 15px 0 15px 40px;
@@ -49,7 +51,7 @@ footer {
 }
 
 .menu {
-    float: right;
+    display: flex;
     margin: 47px 40px 47px 0;
     padding: 0;
 }
@@ -68,6 +70,10 @@ footer {
     color: #34668c;
 }
 
+.menu li:last-child {
+    position: relative;
+}
+
 .menu li a:hover {
     color: rgb(214, 194, 83);
 }
@@ -76,11 +82,11 @@ footer {
     color: #ea4646;
 }
 
-.calalog_wrapper {
+.products_catalog {
     display: flex;
 }
 
-.catalog_content {
+.product_item {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
@@ -142,6 +148,26 @@ footer {
     text-decoration: underline;
 }
 
+.btn-cart {
+    color: #34668c;
+    border: none;
+    background-color: transparent;
+    font-family: 'Courier New';
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    color: rgb(214, 194, 83);
+}
+
+.btn-cart:active {
+    color: #ea4646;
+}
+
 .detailed_desc, .welcome {
     color: #484343;
     font-size: 16px;
@@ -149,15 +175,6 @@ footer {
     line-height: 24px;
     text-align: left;
 }
-
-/*
-.specifications {
-    color: rgb(84, 84, 85);
-    font-size: 15px;
-    line-height: 20px;
-    list-style-image: url(../img/Check-In.png);
-}
-*/
 
 .table_spec {
     border: 1px solid #000;
@@ -224,24 +241,24 @@ form textarea {
     resize: none;
 }
 
-.catalog_content_img {
-    height: 113.267px;
-}
-
-.catalog_content_link a {
+.product_item_link {
     color: #34668c;
-    text-decoration: none;
     width: 290px;
-    display: inline-block;
+    display: block;
+    margin-top: 10px;
 }
 
-.catalog_content_link a:active {
+.product_item_link:hover {
+    color: rgb(214, 194, 83);
+}
+
+.product_item_link:active {
     color: #ea4646;
 }
 
-.link_catalog {
-    height: 113.267px;
-    display: inline-block;
+.product_item_img {
+    display: block;
+    text-decoration: none;
 }
 
 .location {
@@ -269,6 +286,7 @@ form textarea {
 
 .guitar_imgSmall {
     border: 1px solid rgb(49, 78, 45);
+    display: block;
 }
 
 .guitar_imgSmall:hover {
@@ -291,4 +309,96 @@ form textarea {
 
 .yan_map {
     margin-bottom: 30px;
+}
+
+.cart-block {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+    border-radius: 5px;
+    box-sizing: border-box;
+    right: 0;
+    top: 130%;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    width: 335px;
+}
+
+.cart-block::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.cart-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.product-img {
+    display: block;
+}
+
+.product-desc {
+    width: 100%;
+}
+
+.product-title {
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 14px;
+    color: #34668c;
+}
+
+.product-quantity,
+.product-single-price {
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 13px;
+    color: #34668c;
+}
+
+.product-price {
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 16px;
+    color: #34668c;
+    margin-bottom: 5px;
+}
+
+.del-btn {
+    align-self: flex-end;
+    width: 40px;
+    height: 30px;
+    background-color: #34668c;
+    border: 1px solid transparent;
+    color: #fafafa;
+    border-radius: 5px;
+    transition: all ease-in-out .4s;
+    outline: none;
+    cursor: pointer;
+}
+
+.del-btn:hover {
+    background-color: #fafafa;
+    color: #34668c;
+    border: 1px solid #34668c;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }

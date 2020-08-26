@@ -1,0 +1,24 @@
+{
+  "name": "Music-shop",
+  "version": "1.0.0",
+  "description": "Интернет-магазин музыкальных инструментов",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/April14th/Music-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/April14th/Music-shop/issues"
+  },
+  "homepage": "https://github.com/April14th/Music-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
