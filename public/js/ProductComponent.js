@@ -15,10 +15,10 @@ Vue.component('products', {
             });
     },
     methods: {
-        // filter(userSearch) {
-        //     let regexp = new RegExp(userSearch, 'i');
-        //     this.filtered = this.products.filter(el => regexp.test(el.product_name));
-        // }
+        filter(userSearch) {
+            let regexp = new RegExp(userSearch, 'i');
+            this.filtered = this.products.filter(el => regexp.test(el.product_name));
+        }
     },
     template: `<div class="products_catalog">
                 <product v-for="item of filtered" 

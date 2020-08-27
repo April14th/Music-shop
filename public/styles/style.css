@@ -22,13 +22,14 @@ header {
     background-image: url('../img/header_fon.png');
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .site_logo {
     display: flex;
     height: 90px;
     width: 38px;
-    margin: 15px 0 15px 40px;
+    margin-left: 40px;
 }
 
 .site_logo img {
@@ -52,8 +53,9 @@ footer {
 
 .menu {
     display: flex;
-    margin: 47px 40px 47px 0;
+    margin: 0 40px 0 0;
     padding: 0;
+    position: relative;
 }
 
 .menu li {
@@ -71,7 +73,8 @@ footer {
 }
 
 .menu li:last-child {
-    position: relative;
+    position: absolute;
+    top: 29px;
 }
 
 .menu li a:hover {
@@ -213,6 +216,22 @@ footer {
     line-height: 24px;
 }
 
+.contacts_theme {
+    width: 248px;
+    height: 16px;
+}
+
+.contacts_form textarea, 
+.contacts_name, 
+.contacts_mail, 
+.contacts_theme,
+input[type="submit"], 
+input[type="reset"] {
+    font-family: 'Courier New';
+    color: rgb(84, 84, 85);
+    font-size: 14px;
+}
+
 .contacts_name {
     width: 185px;
     height: 16px;
@@ -226,17 +245,6 @@ footer {
 .contacts_mail:focus {
     background-color: rgb(255, 238, 139);
     color: #c241ce;
-}
-
-.contacts_theme {
-    width: 248px;
-    height: 16px;
-}
-
-form textarea, form input[type="email"], form input[type="text"], input[type="submit"], input[type="reset"] {
-    font-family: 'Courier New';
-    color: rgb(84, 84, 85);
-    font-size: 14px;
 }
 
 form textarea, form input[type="text"], form input[type="email"] {
@@ -328,6 +336,7 @@ form textarea {
     padding: 20px;
     color: black;
     width: 335px;
+    z-index: 5;
 }
 
 .cart-block::before {
@@ -413,4 +422,41 @@ form textarea {
     display: flex;
     flex-direction: column;
     align-self: center;
+}
+
+.search-form {
+    position: relative;
+    display: inline-block;
+}
+
+.search-field {
+    box-sizing: border-box;
+    width: 342px;
+    color: #34668c;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #34668c;
+    font-size: 17px;
+}
+
+.search-field:focus {
+    outline: none;
+}
+
+.btn-search {
+    background-color: transparent;
+    border: none;
+    color: #34668c;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    padding: 0 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-search:active {
+    padding: 0 5px 0 7px;
 }

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <header>
             <a href="../index.html" class="site_logo">
                 <img src="../img/site_logo.png" alt="Логотип_сайта">
@@ -17,7 +17,7 @@
                 <li><a href="../index.html">Главная</a></li>
                 <li><a href="../catalog.html">Каталог</a></li>
                 <li><a href="../contacts.html">Контакты</a></li>
-                <li><button class="btn-cart" type="button">Корзина</button></li>
+                <li><cart ref="cart"></cart></li>
             </ul>
         </header>
         <div class="content">
@@ -94,5 +94,11 @@
             <p class="copyrights">Все права защищены &copy;&nbsp;2020</p> 
         </footer>
     </div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="module" src="../js/main.js"></script>
+<script src="../js/CartComponent.js"></script>
+<script src="../js/ErrorComp.js"></script>
+<script src="../js/FilterComp.js"></script>
 </body>
 </html>

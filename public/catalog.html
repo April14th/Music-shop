@@ -16,11 +16,13 @@
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
                 <li><cart ref="cart"></cart></li>
+                <li><filter-el></filter-el></li>
             </ul>
         </header>
         <div class="content">
             <hr> 
             <h1 class="title_1">Каталог</h1>
+            <error ref="error"></error>
             <products ref="products_catalog"></products>
         </div>
         <footer>
@@ -28,10 +30,12 @@
             <p class="copyrights">Все права защищены &copy;&nbsp;2020</p> 
         </footer>
     </div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script type="module" src="js/main.js"></script>
 <script src="js/ProductComponent.js"></script>
 <script src="js/CartComponent.js"></script>
 <script src="js/ErrorComp.js"></script>
+<script src="js/FilterComp.js"></script>
 </body>
 </html>
