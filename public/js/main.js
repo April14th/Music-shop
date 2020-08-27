@@ -1,7 +1,7 @@
 import './ProductComponent.js';
 import './CartComponent.js';
 // import './FilterComp.js';
-// import './ErrorComp.js';
+import './ErrorComp.js';
 
 const app = new Vue({
     el: '#app',

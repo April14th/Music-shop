@@ -23,7 +23,8 @@ Vue.component('products', {
     template: `<div class="products_catalog">
                 <product v-for="item of filtered" 
                 :key="item.product_id" 
-                :product="item"></product>
+                :product="item" 
+                @add-product="$parent.$refs.cart.addProduct"></product>
             </div>`
 });
 
@@ -31,9 +32,11 @@ Vue.component('product', {
     props: ['product'],
     template: `
                 <div class="product_item">
-                    <a :href="product.product_path" class="product_item_img">
+                    <a :href="product.product_path" class="product_item_links">
                         <img :src="product.product_img" alt="picture" class="guitar_imgSmall">
-                        <span class="product_item_link">{{ product.product_name }}</span>
+                        <span class="product_item_name">{{ product.product_name }}</span>
                     </a>
+                    <span class="product_item_price">30000 RUB</span>
+                    <button class="product_item_btn" @click="$emit('add-product', product)">Купить товар</button>
                 </div>`
-})
+});

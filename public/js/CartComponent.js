@@ -63,7 +63,7 @@ Vue.component('cart', {
                 <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
                 <div class="cart-block" v-show="showCart">
                     <cart-item v-for="item of cartItems" :key="item.product_id" :cart-item="item" @remove="remove"></cart-item>
-                    <p class="cart-block-empty" v-if="!cartItems.length">Cart is empty</p>
+                    <p class="cart-block-empty" v-if="!cartItems.length">Товары не добавлены</p>
                 </div>
             </div>`
 });
