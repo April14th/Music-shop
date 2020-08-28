@@ -1,9 +1,8 @@
 Vue.component('cart', {
     data() {
         return {
-            cartUrl: '/getBasket.json',
             cartItems: [],
-            showCart: false
+            showCart: false,
         }
     },
     mounted() {
@@ -14,6 +13,7 @@ Vue.component('cart', {
                 }
             });
     },
+
     methods: {
         addProduct(item) {
             let find = this.cartItems.find(el => el.product_id === item.product_id);

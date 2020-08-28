@@ -23,6 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .site_logo {
@@ -70,11 +71,6 @@ footer {
 .menu li a {
     text-decoration: none;
     color: #34668c;
-}
-
-.menu li:last-child {
-    position: absolute;
-    top: 29px;
 }
 
 .menu li a:hover {
@@ -425,15 +421,16 @@ form textarea {
 }
 
 .search-form {
-    position: relative;
+    position: absolute;
+    left: 110px;
     display: inline-block;
 }
 
 .search-field {
     box-sizing: border-box;
-    width: 342px;
+    width: 300px;
     color: #34668c;
-    padding: 5px;
+    padding: 0px 26.4px 0px 5px;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid #34668c;
