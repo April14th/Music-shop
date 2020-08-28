@@ -3,7 +3,7 @@
     "countGoods": 2,
     "contents": [
         {
-            "quantity": 3,
+            "quantity": 2,
             "product_id": 10,
             "product_img": "../img/JACKSON_PRO_small.jpg",
             "product_name": "JACKSON PRO SC - ALIEN BURST",
@@ -25,6 +25,14 @@
             "product_name": "GIBSON 2019 ES-335 STUDIO EBONY",
             "product_path": "catalog/product2.html",
             "product_price": 36000
+        },
+        {
+            "quantity": 3,
+            "product_id": 13,
+            "product_img": "../img/EPIPHONE LES PAUL_small.jpg",
+            "product_name": "EPIPHONE LES PAUL",
+            "product_path": "catalog/product4.html",
+            "product_price": 24000
         }
     ]
 }

@@ -19,5 +19,12 @@
     "product_name": "IBANEZ ARZ6UCS-BKF PRESTIGE",
     "product_path": "catalog/product3.html",
     "product_price": 42000
+  },
+  {
+    "product_id": 13,
+    "product_img": "img/EPIPHONE LES PAUL_small.jpg",
+    "product_name": "EPIPHONE LES PAUL",
+    "product_path": "catalog/product4.html",
+    "product_price": 24000
   }
 ]

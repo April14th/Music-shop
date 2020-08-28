@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Товар каталога</title>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <header>
+            <a href="../index.html" class="site_logo">
+                <img src="../img/site_logo.png" alt="Логотип_сайта">
+            </a>
+            <ul class="menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../catalog.html">Каталог</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+                <li><cart ref="cart"></cart></li>
+            </ul>
+        </header>
+        <div class="content">
+            <hr>
+        <h1 class="title_1">Электрогитара EPIPHONE LES PAUL</h1>
+        <h3 class="title_3">Описание товара</h1>
+        <div class="guitar_img">
+            <a href="../img/EPIPHONE LES PAUL.jpg" target="_blank">
+                <img src="../img/EPIPHONE LES PAUL.jpg" alt="Гитара_Эфифон" class="guitar_imgBig">
+            </a>
+        </div>
+        <p class="short_desc">Шестиструнная электрогитара, цвет орех<br>
+        Артикул: A071208</p>
+        <h3 class="title_3">Характеристики товара</h3>
+        <table class="table_spec">
+            <tr>
+                <td colspan="9" class="table_up_down"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="table_left_right"></td>
+                <td>Материал корпуса</td>
+                <td>Конфигурация звукоснимателей</td>
+                <td>Тремоло / Бридж</td>
+                <td>Мензура (в&nbsp;дюймах)</td>
+                <td>Тип электроники</td>
+                <td>Количество струн</td>
+                <td>Крепление грифа</td>
+                <td rowspan="2" class="table_left_right"></td>
+            </tr>
+            <tr>
+                <td>Красное дерево</td>
+                <td>НН</td>
+                <td>Tune-o-Matic</td>
+                <td>24.75</td>
+                <td>Пассивная</td>
+                <td>6</td>
+                <td>На болтах</td>
+            </tr>
+            <tr>
+                <td colspan="9" class="table_up_down"></td>
+            </tr>
+        </table>
+        <h3 class="title_3">Подробное описание товара</h3>
+        <p class="detailed_desc">EPIPHONE LES PAUL&nbsp;– шестиструнная электрогитара, дает возможность приобщиться к классическому стилю электрогитар LES PAUL STUDIO. Изначально эти модели были созданы для работы в студии, 
+            но постепенно они завоевали популярность у более широкого круга музыкантов. Это хороший, универсальный инструмент для широкого круга самых разных музыкальных задач. Epiphone представляет бюджетный вариант классической 
+            электрогитары LES PAUL STUDIO, сохраняя все ее основные достоинства. На деку гитары установлен комплект звукоснимателей-хамбакеров, это модели Alnico Classic Humbuckers (х 2) от производителя. Цвет гитары - орех (Walnut). 
+            Гитара обладает насыщенным звуком для рок-музыки и классической, олд-скульной декой, сделанной из красного дерева. Этот инструмент прекрасно проявит себя в разных музыкальных жанрах, начиная от хард-рока и блюза, 
+            заканчивая более современными направлениями. На деку установлен фиксированный бридж Tune-O-Matic. Удобный гриф из крансого дерева (22 лада) с накладкой из палисандра позволяет с легкостью играть и гитарные рифы, 
+            и сложные партии соло. Стандартные колки обеспечивают стабильность строя гитары при интенсивной игре. Органы управления - 2 Vol, 2 Tone, 3-позиционный переключатель. Электрогитара EPIPHONE LES PAUL STUDIO LT Walnut 
+            станет хорошим приобретением для музыкантов, желающих получить качественный инструмент, и прикоснуться к легендарной линейке электрогитар LES PAUL STUDIO.</p>
+        <h3 class="title_3">Наличиe товара</h3>
+        <p class="available">В&nbsp;наличии осталось 36&nbsp;штук.</p>
+        </div>
+        <footer>
+            <hr class="line">
+            <p class="copyrights">Все права защищены &copy;&nbsp;2020</p> 
+        </footer>
+    </div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="module" src="../js/main.js"></script>
+<script src="../js/CartComponent.js"></script>
+<script src="../js/ErrorComp.js"></script>
+<script src="../js/FilterComp.js"></script>
+</body>
+</html>

@@ -83,12 +83,12 @@ footer {
 
 .products_catalog {
     display: flex;
+    justify-content: space-between;
 }
 
 .product_item {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
 }
 
 .title_1 {

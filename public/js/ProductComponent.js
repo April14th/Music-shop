@@ -36,7 +36,7 @@ Vue.component('product', {
                         <img :src="product.product_img" alt="picture" class="guitar_imgSmall">
                         <span class="product_item_name">{{ product.product_name }}</span>
                     </a>
-                    <span class="product_item_price">30000 RUB</span>
+                    <span class="product_item_price">{{ product.product_price }} RUB</span>
                     <button class="product_item_btn" @click="$emit('add-product', product)">Купить товар</button>
                 </div>`
 });
